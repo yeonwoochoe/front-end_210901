@@ -1,14 +1,71 @@
 <!DOCTYPE html>
+<!-- a_04_table.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <title>table코드이해</title>
+  <!--[if IE]><![endif]-->
+  <!-- style -->
+  <style>
+    .ex_part { width: 100%; height:900px; background-color: #fff; }
+    table,tr,th,td {
+      border-spacing:0; border-collapse: collapse;
+      border-width:1px; border-style:solid; border-color:#f07; }
+    table {text-align: center; width:auto; height:auto; min-height:200px; margin:auto; }
+
+    thead {background-color: #afa; }
+    tbody {background-color: rgb(241, 242, 255);}
+
+  </style>
 </head>
 <body>
-  <a href="http://blog.naver.com/PostList.nhn?blogId=mathesis_time">링크 열기</a><br>
-  <a href="http://blog.naver.com/PostList.nhn?blogId=mathesis_time" target="_self">링크 현재창 열기</a><br>
-  <a href="http://blog.naver.com/PostList.nhn?blogId=mathesis_time" target="_blank">링크 새창열기</a>
+  <!-- layout -->
+  <div id="wrap"></div>
+   
+    <!-- ==================== -->
+    <div class="ex_part">
+      <h1>table 코드의 이해</h1>
+      <table>       
+
+        <thead>
+          <tr> 
+            <th>구분</th> 
+            <th>내역</th> 
+            <th>단위</th> 
+            <th>단가</th> 
+            <th>비교</th> 
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr> 
+            <td colspan="5"></td>     
+          </tr>
+
+          <tr>
+            <td rowspan="2">
+              사무실/업소<br>
+              리모델링
+              대청소</td> 
+            <td colspan="5" rowspan="5"></td>  
+                
+          </tr>
+         
+          <tr> 
+          
+        
+        </tbody>
+  
+      </table> 
+    </div>
+
+  </div>
+  <!-- script -->
+   <script></script>
 </body>
 </html>
