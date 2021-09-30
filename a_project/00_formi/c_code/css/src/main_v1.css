@@ -8,28 +8,75 @@ body {
 /* main_common.css */
 /* design */
 #wrap {
-  width: 1440px; height:auto; min-height:500px;}
-/* ======================================= */
-
-/* #headBox 
-  ================================================ */
+  width: 1440px; height:auto; }
 
 
+ /* #headBox */
+  #headBox{width: 100%; height: 200px;
+  box-sizing: border-box;
+  background-color:#0CE6F0;}
 
-/* #viewBox 
-  ================================================ */
+  
+    #top_navigation {
+    width: 100%; height: 80px;
+    padding: 30px 70px;
+    box-sizing: border-box;
+    background-color: #fff;}
+      
+      .support_unb {
+      float: left;
+      width: 430px; height: 30px;}
 
-/* #newBox 
-  ================================================ */
+      .s_left {width: 100%; height: 100%;}
 
-/* #subAdBox 
-  ================================================ */
+      .s_left li{
+      float: left;
+      margin-right: 20px;
+      box-sizing: border-box;
+      text-align: center;}
 
 
-/* #galleryBox 
-  ================================================ */
+      .user_unb {
+        float:right;
+        width: 310px; height: 30px;}
+  
+        .u_right {width: 100%; height: 100%;}
+  
+        .u_right li{
+        float:left;
+        margin-left: 20px;
+        box-sizing: border-box;
+        text-align: center;}
 
-/* #sponsorBox 
-  ================================================ */
 
-  ================================================ */
+
+
+
+      
+
+
+
+
+/* #viewBox */
+  #viewBox{width: 100%; height: 200px;
+  background-color:#eee;}
+
+/* #bestPdBox */
+  #bestPdBox{width: 100%; height: 200px;
+  background-color:#777;}
+
+/* #brandAboutBox */
+  #brandAboutBox{width: 100%; height: 200px;
+  background-color:#ddd;}
+
+ /* #rivewPdBox  */
+  #rivewPdBox{width: 100%; height: 200px;
+  background-color:#777;}
+
+/* #infoBox */
+  #infoBox{width: 100%; height: 200px;
+  background-color:#eee;}
+
+  /* #footBox */
+  #footBox{width: 100%; height: 200px;
+  background-color:#444;}
