@@ -13,36 +13,78 @@ body {
 
  /* #headBox */
   #headBox{width: 100%; height: 200px;
-  box-sizing: border-box;
-  background-color:#0CE6F0;}
+    position:relative;
+    padding-top: 80px;
+    box-sizing: content-box; /* headBox 상단의 공간을 만들기위해 */
+    background-color:#0CE6F0;
+  }
 
+    #mid_header {width: 100%; height: 120px;
+      padding: 30px 40px 30px 60px;
+      box-sizing: border-box;
+      background-color:#777;}
+
+    h1 {
+      float: left;
+      width: 193px; height: 64px;
+      background-color: #fff;}
+
+    .mid_navigation {
+      float: left;
+      margin: 0px 20px 0px 20px ;
+      width: 800px; height: 30px; 
+    background-color: #dd0;}
+    
+     .mid_navigation > .gnb {width: 100%; height: 100%;}
   
-    #top_navigation {
-    width: 100%; height: 80px;
-    padding: 30px 70px;
-    box-sizing: border-box;
-    background-color: #fff;}
+      .gnb li{
+        float:left;
+        margin-left: 20px;
+        
+        box-sizing: border-box;
+        color: #fff;
+        text-align: center;}
+  
+
+      .serch_box {
+        float: right;
+        margin-top: 20px;
+        width: 300px; height: 40px;
+        background-color: #ddf; }
+  
+  
+
+
+    /* top_navigation -------------------------*/
+
+      #top_navigation {
+        /* 내용을 강제로 상단으로 끌어올림 ^^ 요롷게요~~ */
+        position:absolute; top: 0; left:0; 
+        width: 100%; height: 80px;
+        padding: 30px 70px;
+        box-sizing: border-box;
+       background-color: #fff;}
       
       .support_unb {
-      float: left;
-      width: 430px; height: 30px;}
+        float: left;
+        width: 430px; height: 30px;}
 
-      .s_left {width: 100%; height: 100%;}
+      .support_area {width: 100%; height: 100%;}
 
-      .s_left li{
-      float: left;
-      margin-right: 20px;
-      box-sizing: border-box;
-      text-align: center;}
+      .support_area li{
+        float: left;
+        margin-right: 20px;
+        box-sizing: border-box;
+        text-align: center;}
 
 
       .user_unb {
         float:right;
         width: 310px; height: 30px;}
   
-        .u_right {width: 100%; height: 100%;}
+      .user_area {width: 100%; height: 100%;}
   
-        .u_right li{
+      .user_area li{
         float:left;
         margin-left: 20px;
         box-sizing: border-box;
@@ -52,14 +94,13 @@ body {
 
 
 
-      
-
 
 
 
 /* #viewBox */
-  #viewBox{width: 100%; height: 200px;
+  #viewBox{width: 100%; height: 600px;
   background-color:#eee;}
+
 
 /* #bestPdBox */
   #bestPdBox{width: 100%; height: 200px;
