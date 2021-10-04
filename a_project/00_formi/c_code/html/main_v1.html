@@ -40,12 +40,24 @@
           </ul>
         </div>
         <div class="serch_infobox">
-          상품 검색창
+          <input type="text" placeholder="검색어를 입력하세요">
         </div>
+        <!--실제로는 이런 구성을-->
+          <!-- <div class="search_demo">
+            <form action="연결할문서">
+              <fieldset>
+                <legend>검색제목</legend>
+                <label for="search">검색어를 입력하세요</label>
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button>상품 검색창</button>
+              </fieldset>
+            </form>
+          </div> -->
+
       </div>
     </div>     <!-- midheader_wrap -->
       <div id="top_navigation">
-        <div class="top_nav_wrap">
+        <div class="top_nav_wrap clearfix">
         <h2 class="blind">top_navigation</h2>
         <div class="support_unb">
           <!-- 클래스이름에 left/right사용하시면 나중에 힘들어요. -->
@@ -74,7 +86,19 @@
 
 
     <section id="viewBox">
-      <h2>viewBox</h2>
+      <h2 class="blind">viewBox</h2>
+      <div class="view_btn">
+        <button class="next">next</button>
+        <button class="prev">prev</button>
+       
+      </div>
+ 
+      <img src="../img/banner1920x550_2.jpg" alt="viewBoximg"/>
+
+      <!-- <div class="viewbtn">
+      <button type="button" class="next"></button>
+      <button type="button" class="prev"></button>
+    </div>  통상 요새 쓰는 방식은 아님--> 
     </section>  <!-- viewBox-->
 
   
@@ -122,28 +146,17 @@
     <p>제품명</p>
   </div>
 </div>
-
-
-
-
     </div>  
-
-
-
-
-
-
     </article> <!-- serchPdBox-->
 
-
-
-
-
-
-
-
     <section id="bestPdBox">
-      <h2 class="blind">bestPdBox</h2>
+      <hgroup>
+        <!-- <div class="icon"></div> -->
+        <h2>
+          <i></i>
+          bestPdBox</h2>
+        <h3>한주간 많이 팔린 인기상품</h3>
+      </hgroup>
       <div class="bset_pd_wrap">
 
         <div class="best_conbox">
@@ -309,8 +322,12 @@
 
 
     <footer id="footBox">
-     <h2>footBox</h2>
-     
+     <h2 class="blind">footBox</h2>
+     <address>
+      COMPANY (주)포미다이어트 OWNER 정원철  BUSINESS LICENSE 624-87-01238 ONLINE-LICENSE 제2019-인천서구-0780호
+      (주)포미다이어트
+      ADDRESS 22841 인천광역시 서구 장고개로 125, 파란들테크노텔 3F (주)포미다이어트 개인정보취급담당자 김주희
+     </address>
     </footer>  <!-- footBox-->
 
 

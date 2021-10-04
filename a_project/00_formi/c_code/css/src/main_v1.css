@@ -17,20 +17,20 @@ body {
   .head_wrapper {position:fixed;top:0;left:0;
     width:100%;border-bottom:1px solid #ddd; z-index:1000}
   
-  .midheader_wrap {width: 1440px; height: 120px; margin: auto;
+  .midheader_wrap {width: 1440px; height: 100px; margin: auto;
   }
 
 
-    #headBox{width: 100%; height: 120px;
+    #headBox{width: 100%; height: 100px;
     position:relative;
-    padding-top: 80px;
+    padding-top: 50px;
     box-sizing: content-box; /* headBox 상단의 공간을 만들기위해 */
 }
 
-    #mid_header {width: 100%; height: 120px;
-      padding: 30px 40px 30px 60px;
+    #mid_header {width: 100%; height: 100px;
+      padding: 20px 40px 20px 60px;
       box-sizing: border-box;
-      background-color: #fff;}
+      background-color: rgba(255, 255,2555,0.5);}
 
     h1 {
       float: left;
@@ -43,8 +43,8 @@ body {
       width: 450px; height: 30px; 
     }
     
-     .mid_navigation > .gnb {width: 100%; height: 100%; 
-   } 
+    .mid_navigation > .gnb {width: 100%; height: 100%; 
+    } 
   
       .gnb li{
         float:left;
@@ -55,7 +55,7 @@ body {
         text-align: center;}
   
 
-      .serch_infobox {
+      .serch_infobox input {
         float: right;
         width: 300px; height: 40px;
         margin-top: 20px;
@@ -67,26 +67,29 @@ body {
 
     .top_nav_wrap {
       position: relative; margin: 0 auto;
-      width: 1440px; height: 80px; }
+      width: 1440px; height:auto; }
 
       #top_navigation {
         /* 내용을 강제로 상단으로 끌어올림 ^^ 요롷게요~~ */
         position:absolute; top: 0; left:0; 
-        width: 100%; height: 80px;
-        padding: 30px 70px;
+        width: 100%; height: 50px;
+        padding: 10px 70px;
         box-sizing: border-box;
         border-bottom: 1px solid #ddd;
-       background-color: rgb(226, 226, 226);}
+        background-color: rgb(226, 226, 226);}
       
       .support_unb {
         float: left;
         width: 430px; height: 30px;}
 
-      .support_area {width: 100%; height: 100%;}
+      .support_area 
+      {width: 100%; height: 100%;}
 
       .support_area li{
         float: left;
+        width: auto; height: 100%;
         margin-right: 20px;
+        line-height: 30px;
         box-sizing: border-box;
         text-align: center;}
 
@@ -98,6 +101,8 @@ body {
       .user_area {width: 100%; height: 100%;}
   
       .user_area li{
+        width: auto; height: 100%;
+        line-height: 30px;
         float:left;
         margin-left: 20px;
         box-sizing: border-box;
@@ -108,8 +113,37 @@ body {
 
 
 /* #viewBox -----------------------------------*/
-  #viewBox{width: 100%; height: 600px;
-  background-color:#eee;}
+  #viewBox{position: relative;
+  width: 100%; height: 640px;
+  margin-top: -50px;
+  background-color:#eee; overflow: hidden;}
+
+  #viewBox img {position: relative;
+    left: 50%; margin-left: -990px;
+    width: 1980px; height: 100%;}
+
+  .view_btn {position: absolute;
+    top: 50%; left:0; z-index: 1000;
+    width: 100%; height: auto;}
+
+    .view_btn button {
+      float:left;
+      width: 50px; height: 50px;
+      background-color: #fff;}
+    
+  .view_btn .next {float: right; }
+
+  
+
+
+  /* .button {width: 40px; height: 40px; background-color: #fff;}
+
+  .viewbtn .next {float:right}
+  .viewbtn .prev {float:left}
+ * 통상 쓰는 방식은 아님/
+
+
+
 
 
 /* #serchPdBox -----------------------------------*/
@@ -160,10 +194,24 @@ body {
 /* #bestPdBox-------------------------------------- */
   #bestPdBox{width: 100%; height: 1000px;
   background-color:#333;}
-
+    
   .bset_pd_wrap {width: 1300px; height: 360px;
     margin: 200px auto;
   background-color: #333;}
+
+  #bestPdBox hgroup {width: 100%; height: auto;}
+  #bestPdBox .icon {width: 30px; height: 30px; margin: auto; margin-bottom: 10px; background-color: #fff;}
+  #bestPdBox h2 { text-align: center; color:#fff; font-size:2.5rem;}
+  #bestPdBox h2 i {
+    display: block;  /*i태그는 인라인 요소이기 때문에 블록처리해야함*/
+    width: 40px; height: 40px; margin: auto;
+    background-color: #fff;
+    background-image: url("../../img/best-pd-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  #bestPdBox h3 { text-align: center; color:#fff; font-size:2rem;}
 
     .best_conbox {
       float: left;
@@ -171,7 +219,7 @@ body {
       padding: 10px; margin-right: 33px;
       background-color: #fff;}
 
-     .best_conbox:last-child {margin-right: 0;}
+    .best_conbox:last-child {margin-right: 0;}
 
   .best_conbox > .thumbnail {
     float: left;
@@ -208,7 +256,7 @@ body {
     background-color: #444;}
 
 .tab_title_area {
-  float: left;
+  /* float: left; */
   width: 100%; height: 72px;
   background-color: #ddd;}
 
@@ -216,7 +264,8 @@ body {
 .tab_title_area > ul {
   width: 100%; height: 100%;
   box-sizing: border-box;
-  border-bottom: 1px solid #ddd;}
+  /* border-bottom: 1px solid #ddd; */
+}
 
 .tab_title_area li {
     float: left;
@@ -398,3 +447,20 @@ body {
   /* #footBox---------------------------------------------- */
   #footBox{width: 100%; height: 340px;
   background-color:#444;}
+
+  address {width: 100%; height: 100%;
+    color: #fff;
+  }
+
+
+
+  /* 1. #headBox 
+  ==================================================== */
+  
+  /* --------------------------------------------------- */
+  /*  */
+  /**
+   * ? 내용을 설명
+   * ! 내용을 설명
+   * TODO: 내용을 설명
+  */
