@@ -8,10 +8,13 @@
   
   <!-- css를 불러오는 순서 : font/icon -> reset -> common.css -> design.css -->
   <!-- font:구글폰트-noto-sans-kr -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet"> 
 
+
+  <link rel="stylesheet" href="../fonts/fontAwesome/css/all.css">
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/main_v1.css">
@@ -103,8 +106,14 @@
 
   
     <article id="serchPdBox">
-      <h2 class="blind">serchPdBox</h2>
+      
       <div class="serch_pd_wrap">
+        <hgroup>
+          <!-- <div class="icon"></div> -->
+          <h2>
+            <i></i>
+            나한테 맞는 포르미 도시락 찾기<i class="fas fa-search"></i></h2>
+        </hgroup>
         
         <div class="serch_conbox">
           <h3 class="blind">best_product_name</h3>
@@ -243,7 +252,12 @@
 
 
     <article id="rivewPdBox">
-      <h2 class="blind">rivewPdBox</h2>
+    <hgroup>
+      <h2>
+        <i></i>
+        rivewPdBox</h2>
+      <h3>포르미가 알려주는 제품별 맛리뷰!</h3>
+    </hgroup>
       <div class="revew_pd_wrap">
         <div class="revew_conbox">
           <div class="direc_btn"><a href="#">바로 보러가기</a> </div>
@@ -280,15 +294,15 @@
       <div class="info_content_area_01">
         <div class="cs_center">
           <h3>CUSTOMER CENTER</h3>
-          <strong class="cs_number">1111-1111</strong>
-          <p><strong>평일</strong> 오전 10:00 ~ 오후 05:00</p>
-          <p><strong>점심</strong> 오후 12:30 ~ 오후 01:30</p>
-          <p><strong>휴무</strong> 토 / 일 / 공휴일 휴무</p>
+          <em class="cs_number">1111-1111</em>
+          <p><em>평일</em> 오전 10:00 ~ 오후 05:00</p>
+          <p><em>점심</em> 오후 12:30 ~ 오후 01:30</p>
+          <p><em>휴무</em> 토 / 일 / 공휴일 휴무</p>
         </div>
         <div class="bank_account">
           <h3>BANK ACCOUNT</h3>
-          <p><span class="tt">은행</span> <span class="theme2 account">111-111-11111</span></p>
-          <p><span class="tt">예금주</span> <span class="theme2 account">회사명</span></p>
+          <p><span class="theme1">은행</span> <span class="theme2 account">111-111-11111</span></p>
+          <p><span class="theme1">예금주</span> <span class="theme2 account">회사명</span></p>
 
 
         </div>
@@ -321,17 +335,63 @@
     </article>  <!-- infoBox-->
 
 
+
+
+
     <footer id="footBox">
      <h2 class="blind">footBox</h2>
-     <address>
-      COMPANY (주)포미다이어트 OWNER 정원철  BUSINESS LICENSE 624-87-01238 ONLINE-LICENSE 제2019-인천서구-0780호
-      (주)포미다이어트
-      ADDRESS 22841 인천광역시 서구 장고개로 125, 파란들테크노텔 3F (주)포미다이어트 개인정보취급담당자 김주희
-     </address>
-    </footer>  <!-- footBox-->
+     <div class="footbox_wrapper">
+      <div class="footbox_area_01">
+        <address>
+          <p>COMPANY (주)포미다이어트 OWNER 정원철  BUSINESS LICENSE 624-87-01238 ONLINE-LICENSE 제2019-인천서구-0780호</p>
+          <p>ADDRESS 22841 인천광역시 서구 장고개로 125, 파란들테크노텔 3F (주)포미다이어트</p>
+          <p>개인정보취급담당자 최연우 </p> 
+        </address>
+      </div>
+      <div class="footbox_area_02">
+        <div class="membership_btn">
+        <a href="#">파트너회원은 10% 할인혜택<span>partner membership</span></a>
+        </div>
+
+        <div class="sns_btn">
+          <ul>
+            <li><a href="#">sns</a></li>
+            <li><a href="#">sns</a></li>
+            <li><a href="#">sns</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="footbox_area_03">
+        <div class="foot_info">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+      </div>
+     
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </footer>  <!-- footBox-->
+
+
 
 
     
+
+
 
   </div> <!-- wrap -->
 
