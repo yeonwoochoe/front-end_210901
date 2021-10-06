@@ -13,13 +13,13 @@
 #wrap { margin:auto; }
 
 
-.borderline {
-content: '';
-width: 100%;
-border-top: 1px solid #ebebe7;
-position: absolute;
-left: 0;
-top:80px;}
+.borderline::before {
+  content: '';
+  width: 100%;
+  border-top: 1px solid #ebebe7;
+  position: absolute;
+  left: 0;
+  top:80px;}
 
 
 
