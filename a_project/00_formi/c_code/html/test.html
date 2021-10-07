@@ -1,42 +1,40 @@
-<div class="footbox_wrap">
-   <div class="foot_info">
-     <ul>
-       <li><a href="#">회사소개</a></li>
-       <li><a href="#">이용안내</a></li>
-       <li><a href="#">이용약관</a></li>
-       <li><a href="#">개인정보처리방침</a></li>
-     </ul>
- </div>
+<form name="SearchForm" method="get">
+  <div class="sch_n_box_wrap">
+    <span class="sch_n_box">
+      <input
+        type="text"
+        class="schsn_box_word noto_sans"
+        name="schword"
+        id="textfield4"
+        style="outline: none"
+        title="검색어 입력"
+        value="치킨"
+        placeholder="상품 검색해보세요."
+        maxlength="255"
+        onkeyup="autoComs();"
+        onfocus="textdel(this);autoComs();"
+        onkeypress="if (event.keyCode == 13){checkSearch1();return(event.keyCode != 13);}"
+        autocomplete="off"
+      />
+    </span>
 
+    <span class="btn_n_sch_wrap">
+      <input
+        type="image"
+        src="/img/btn/btn_sch.gif"
+        alt="검색"
+        class="btn_n_sch"
+        style="outline: none"
+        onclick="checkSearch1();"
+      />
+    </span>
+  </div>
 
+  <div id="ViewKeyWord" class="sch_auto_wrap" style="display: none">
+    <div class="sch_auto">
+      <ul id="ViewKeyWordList" class="keywd noto_sans"></ul>
+    </div>
+  </div>
+</form>
 
-   <address>
-     <p>COMPANY (주)포미다이어트 OWNER 정원철  BUSINESS LICENSE 624-87-01238 ONLINE-LICENSE 제2019-인천서구-0780호</p>
-     <p>ADDRESS 22841 인천광역시 서구 장고개로 125, 파란들테크노텔 3F (주)포미다이어트</p>
-     <p>개인정보취급담당자 김주희 </p>
-
-
-
-   </address>
-
-
-
-<div class="foot_ad_info">
- <div class="foot_membership_btn">
-
- </div>
-
- <div class="foot_sns_btn">
-
-   
- </div>
-
-</div>
-
-
-
-</div> <!-- footbox_wrap --> 
-#bestPdBox hgroup {width: 100%; height: auto;}
-
-#bestPdBox h2 { text-align: center; color:#fff; font-size:2.5rem;}
-#bestPdBox h3 { text-align: center; color:#fff; font-size:2rem;}
+Y1
