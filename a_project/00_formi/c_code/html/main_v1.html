@@ -23,7 +23,7 @@
 
     <script src="../js/common/modernizr-custom.js"></script>
 
-    <title>웹 프로토타입</title>
+    <title>포르미</title>
     <link rel="shortcut icon" href="../favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="../favicon.png" />
   </head>
@@ -44,26 +44,38 @@
                   <li><a href="#">이벤트</a></li>
                 </ul>
               </div>
+              <!-- midheader_wrap -->
               <div class="search_form_box">
-                <span class="sch_inner_wrap">
-                  <input type="text" placeholder="검색어를 입력하세요" />
-                </span>
-                <span class="sch_inner_btn_wrap">
-                  <input type="image" src="../img/Search_icon.png" alt="검색" />
-                </span>
+                <form action="#" method="GET" class="shop_search">
+                  <fieldset>
+                    <legend>검색제목</legend>
+                    <span class="sch_inner_wrap">
+                      <input type="text" placeholder="검색어를 입력하세요" />
+                    </span>
+                    <span class="sch_inner_btn_wrap">
+                      <input
+                        type="image"
+                        src="../img/Search_icon.png"
+                        alt="검색"
+                      />
+                    </span>
+                  </fieldset>
+                </form>
               </div>
+
               <!--실제로는 이런 구성을-->
               <!-- <div class="search_demo">
-            <form action="연결할문서">
+            <form action="연결할문서 #" method="GET" class="shop_search">
               <fieldset>
                 <legend>검색제목</legend>
-                <label for="search">검색어를 입력하세요</label>
-                <input type="text" placeholder="검색어를 입력하세요">
+                <label for="search" class="blind"> 검색어를 입력하세요</label>
+                <input type="text" id="search"  value="" placeholder="검색어를 입력하세요">
                 <button>상품 검색창</button>
               </fieldset>
             </form>
           </div> -->
             </div>
+            <!-- mid_header -->
           </div>
           <!-- midheader_wrap -->
           <div id="top_navigation">
@@ -78,7 +90,7 @@
                   <li><a href="#">sns</a></li>
                 </ul>
               </div>
-              <div class="user_unb">
+              <div class="user_nav">
                 <ul class="user_area">
                   <li><a href="#">로그인</a></li>
                   <li><a href="#">회원가입</a></li>
@@ -96,27 +108,31 @@
 
       <section id="viewBox">
         <h2 class="blind">viewBox</h2>
-        <h3>광고영역 view_title Lorem, ipsum.</h3>
-        <div class="viewmore_btn vmb">
-          <a href="#"
-            ><i class="fas fa-plus-circle"></i
-            ><span class="more">view more </span></a
-          >
+        <h3 class="blind">광고영역</h3>
+        <div class="slide_wrapper">
+          <div class="viewmore_btn vmb">
+            <a href="#"><i class="fas fa-plus-circle"></i><span class="more">view more </span></a>
+          </div>
+          <div class="view_btn">
+            <button type="button" class="next">
+              <img src="../img/slick-next.svg" alt="slick-next" />
+            </button>
+            <button type="button" class="prev">
+              <img src="../img/slick-prev.svg" alt="slick-prev" />
+            </button>
+          </div>
+          <div class="view_area">
+            <div class="slide_con_wrap">
+              <div class="slide_01 action">
+                <span class="blind">slide_01</span></a></div>
+              <div class="slide_02"><a href="#"><span class="blind">slide_02</span></a></div>
+              <div class="slide_03"><a href="#"><span class="blind">slide_03</span></a></div>
+              <div class="slide_04"><a href="#"><span class="blind">slide_04</span></a></div>
+              <div class="slide_05"><a href="#"><span class="blind">slide_05</span></a></div>
+            </div>
+            <!-- <img class="view_main" src="../img/banner1920x550_2.jpg" alt="viewBoximg"/> -->
+          </div>
         </div>
-        <div class="view_btn">
-          <button class="next">
-            <img src="../img/slick-next.svg" alt="slick-next" />
-          </button>
-          <button class="prev">
-            <img src="../img/slick-prev.svg" alt="slick-prev" />
-          </button>
-        </div>
-        <img
-          class="view_main"
-          src="../img/banner1920x550_2.jpg"
-          alt="viewBoximg"
-        />
-
         <!-- <div class="viewbtn">
       <button type="button" class="next"></button>
       <button type="button" class="prev"></button>
@@ -273,31 +289,32 @@
         </hgroup>
         <div class="revew_pd_wrap">
           <div class="revew_conbox">
+            <p class="blind">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              repudiandae eveniet illum non illo nulla veritatis autem
+            </p>
             <div class="direc_btn">
               <a href="#">바로 보러가기</a>
             </div>
-            <img src="../img/best-pd-1.jpg" alt="best-product" />
+            <!-- <img src="../img/best-pd-1.jpg" alt="best-product" /> -->
           </div>
 
           <div class="revew_conbox">
             <div class="direc_btn">
               <a href="#">바로 보러가기</a>
             </div>
-            <img src="../img/best-pd-1.jpg" alt="best-product" />
           </div>
 
           <div class="revew_conbox">
             <div class="direc_btn">
               <a href="#">바로 보러가기</a>
             </div>
-            <img src="../img/best-pd-1.jpg" alt="best-product" />
           </div>
 
           <div class="revew_conbox">
             <div class="direc_btn">
               <a href="#">바로 보러가기</a>
             </div>
-            <img src="../img/best-pd-1.jpg" alt="best-product" />
           </div>
         </div>
       </article>
@@ -307,14 +324,14 @@
         <h2 class="blind">infoBox</h2>
         <div class="info_content_area_01">
           <div class="cs_center">
-            <h3>CUSTOMER CENTER</h3>
+            <h3>customer center</h3>
             <em class="cs_number">1111-1111</em>
             <p><em>평일</em> 오전 10:00 ~ 오후 05:00</p>
             <p><em>점심</em> 오후 12:30 ~ 오후 01:30</p>
             <p><em>휴무</em> 토 / 일 / 공휴일 휴무</p>
           </div>
           <div class="bank_account">
-            <h3>BANK ACCOUNT</h3>
+            <h3>bank account</h3>
             <p>
               <span class="theme1">은행</span>
               <span class="theme2 account">111-111-11111</span>

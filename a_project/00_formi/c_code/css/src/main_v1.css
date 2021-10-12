@@ -76,8 +76,9 @@ h1 a {
 
 .gnb li {
   float: left;
+  width: auto;
+  height: 100%;
   margin-left: 20px;
-
   box-sizing: border-box;
   color: #444;
   text-align: center;
@@ -102,7 +103,18 @@ h1 a {
   height: 100%;
 }
 
-.sch_inner_wrap > input {
+fieldset {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+.search_form_box legend {
+  display: none;
+}
+
+.sch_inner_wrap input {
   border: none;
 }
 
@@ -158,7 +170,7 @@ h1 a {
   line-height: 30px;
 }
 
-.user_unb {
+.user_nav {
   float: right;
   width: 310px;
   height: 30px;
@@ -182,20 +194,25 @@ h1 a {
 /* #viewBox ============================================================*/
 
 #viewBox {
-  position: relative;
   width: 100%;
   height: 640px;
   margin-top: -50px;
   background-color: #eee;
-  overflow: hidden;
 }
 
-#viewBox img .view_main {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -990px;
-  width: 1980px;
+.slide_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.view_area {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide_con_wrap {
+  position: relative;
   height: 100%;
 }
 
@@ -246,6 +263,44 @@ h1 a {
 .view_btn .next {
   float: right;
 }
+
+.slide_con_wrap > div {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide_con_wrap > div.action {
+  display: block;
+  z-index: 10;
+}
+
+.slide_01 {
+  background-color: #4b97;
+}
+.slide_02 {
+  background-color: #73f7;
+}
+.slide_03 {
+  background-color: #6637;
+}
+.slide_04 {
+  background-color: #5af7;
+}
+.slide_05 {
+  background-color: #e067;
+}
+
+/* #viewBox img .view_main {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -990px;
+  width: 1980px;
+  height: 100%;
+} 내가 한 것..쓰지말자*/
 
 /* .button {width: 40px; height: 40px; background-color: #fff;}
 
@@ -486,6 +541,10 @@ h1 a {
   line-height: 72px;
 }
 
+.tab_title_area li:hover {
+  background-color: #567e00;
+}
+
 .tab_title_area li.action {
   border-bottom: 7px solid #567e00;
 }
@@ -575,12 +634,17 @@ h1 a {
   float: left;
   width: 300px;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url("https://picsum.photos/200/300");
 }
 
 .revew_conbox:last-child {
   margin-right: 0;
 }
 
+/* anker요소에는 position을 주지 X */
 .revew_conbox .direc_btn {
   position: absolute;
   bottom: 50px;
@@ -589,6 +653,11 @@ h1 a {
   z-index: 500;
   width: 200px;
   height: 60px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 60px;
+  background-color: #444;
 }
 
 .revew_conbox .direc_btn a {
@@ -618,9 +687,10 @@ h1 a {
 
 .revew_conbox img {
   float: left;
-  background-color: #fff;
+  /* background-color: #fff; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  height: auto;
 }
 
 /* #infoBox ============================================================ */
@@ -629,6 +699,10 @@ h1 a {
   height: 623px;
   padding: 160px 90px;
   background-color: #eee;
+}
+
+.info_content_area_01 h3 {
+  text-transform: uppercase;
 }
 
 .info_content_area_01 {
@@ -753,34 +827,41 @@ h1 a {
 .footbox_wrapper {
   width: 100%;
   height: 240px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .footbox_area_01 {
   float: left;
-  padding: 40px;
-  width: 960px;
-  height: 200px;
+  /* padding: 40px; */
+  padding-right: 0;
+  width: 900px;
+  height: 160px;
 }
 
 address {
   float: left;
-  width: 960px;
+  /* width: 100%; */
   height: auto;
   font-weight: 100;
   color: #fff;
 }
 
 .footbox_area_02 {
-  float: left;
-  width: 480px;
-  height: 200px;
-  padding: 40px;
+  /* float: left; */
+  float: right;
+  width: 400px;
+  height: 160px;
+  /* padding: 40px; */
+  /* padding-left: 0; */
 }
 
 .membership_btn {
-  width: 400px;
+  /* width: 400px; */
+  /* width: 100%; */
   height: 40px;
-  padding: 10px 30px;
+  padding: 10px 20px;
+  text-align: center;
   margin: 0;
   background-color: #eee;
 }
@@ -837,8 +918,10 @@ address {
 }
 
 .footbox_area_03 {
-  float: left;
-  width: 100%;
+  /* float: left; */
+  clear: both;
+  width: calc(100% + 80px);
+  margin-left: -40px;
   height: 40px;
   background-color: #555;
 }
@@ -862,6 +945,7 @@ address {
   width: auto;
   height: auto;
   margin: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .foot_info li a {
@@ -874,7 +958,7 @@ address {
   line-height: 40px;
 }
 
-.foot_info li:after,
+/* .foot_info li:after,
 .foot_info li::after {
   content: "";
   display: block;
@@ -883,15 +967,27 @@ address {
   right: -40px;
   bottom: 0;
   width: 1px;
-  height: 11px;
+  height: 8px;
   margin: auto 30px;
   background-color: #e4e8eb;
+} */
+
+.foot_info li:after,
+.foot_info li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  width: 1px;
+  height: 20%;
+  transform: translateY(-50%);
+  background-color: #fff9;
 }
 
 .foot_info li:last-child:after {
   display: none;
 }
-
 /* --------------------------------------------------- */
 /*  */
 /**

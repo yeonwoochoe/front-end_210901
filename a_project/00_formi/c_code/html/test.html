@@ -1,40 +1,127 @@
-<form name="SearchForm" method="get">
-  <div class="sch_n_box_wrap">
-    <span class="sch_n_box">
-      <input
-        type="text"
-        class="schsn_box_word noto_sans"
-        name="schword"
-        id="textfield4"
-        style="outline: none"
-        title="검색어 입력"
-        value="치킨"
-        placeholder="상품 검색해보세요."
-        maxlength="255"
-        onkeyup="autoComs();"
-        onfocus="textdel(this);autoComs();"
-        onkeypress="if (event.keyCode == 13){checkSearch1();return(event.keyCode != 13);}"
-        autocomplete="off"
-      />
-    </span>
+<div class="header_search">
+  <div class="header_search_cont">
+    <!-- 검색 폼 -->
+    <div class="top_search">
+      <form
+        name="frmSearchTop"
+        id="frmSearchTop"
+        action="../goods/goods_search.php"
+        method="get"
+        novalidate="novalidate"
+      >
+        <fieldset>
+          <legend>검색폼</legend>
+          <div class="top_search_cont">
+            <div class="top_text_cont">
+              <input
+                type="text"
+                id="search_form"
+                name="keyword"
+                class="top_srarch_text"
+                title=""
+                placeholder=""
+                autocomplete="off"
+              />
+              <input
+                type="image"
+                src="/data/skin/front/kaimen_pc_n/img/main/sch_btn.png"
+                id="btnSearchTop"
+                class="btn_top_srarch"
+                title="검색"
+                value="검색"
+                alt="검색"
+              />
+            </div>
+            <!-- //top_text_cont -->
+            <div class="search_cont" style="display: none">
+              <input type="hidden" name="recentCount" value="5" />
 
-    <span class="btn_n_sch_wrap">
-      <input
-        type="image"
-        src="/img/btn/btn_sch.gif"
-        alt="검색"
-        class="btn_n_sch"
-        style="outline: none"
-        onclick="checkSearch1();"
-      />
-    </span>
-  </div>
+              <script type="text/javascript">
+                $(function () {
+                  /* 상단 검색 */
+                  $('.top_search_cont input[name="keyword"]').on({
+                    focus: function () {
+                      $(this).parents().find(".search_cont").show();
+                    },
+                    blur: function () {
+                      $("body").click(function (e) {
+                        if (
+                          !$(".search_cont").has(e.target).length &&
+                          e.target.name != "keyword"
+                        ) {
+                          $(this).parents().find(".search_cont").hide();
+                        }
+                      });
+                      $(".btn_top_search_close").click(function () {
+                        $(this).parents().find(".search_cont").hide();
+                      });
+                    },
+                  });
 
-  <div id="ViewKeyWord" class="sch_auto_wrap" style="display: none">
-    <div class="sch_auto">
-      <ul id="ViewKeyWordList" class="keywd noto_sans"></ul>
+                  if ($("input[name=recentCount]").val() > 0) {
+                    $(".js_recom_box")
+                      .removeClass("recom_box_only")
+                      .addClass("recom_box");
+                  } else {
+                    $(".js_recom_box")
+                      .removeClass("recom_box")
+                      .addClass("recom_box_only");
+                  }
+                });
+              </script>
+              <div class="js_recom_box recom_box" style="display: none">
+                <dl>
+                  <dt>추천상품</dt>
+                  <dd>
+                    <div class="recom_item_cont">
+                      <!-- //recom_icon_box -->
+                      <div class="recom_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo="> </a>
+                      </div>
+                      <!-- //recom_tit_box -->
+                      <div class="recom_money_box"></div>
+                      <!-- //recom_money_box -->
+                      <div class="recom_number_box"></div>
+                      <!-- //recom_number_box -->
+                    </div>
+                    <!-- //recom_item_cont -->
+                  </dd>
+                </dl>
+              </div>
+
+              <!-- //recom_box -->
+
+              <div class="recent_box">
+                <dl class="js_recent_area">
+                  <dt>최근검색어</dt>
+                  <dd>최근 검색어가 없습니다.</dd>
+                </dl>
+              </div>
+              <!-- //recent_box -->
+              <div class="seach_top_all">
+                <button type="button" class="btn_top_search_close">
+                  <strong>닫기</strong>
+                </button>
+              </div>
+              <!-- //seach_top_all -->
+            </div>
+            <!-- //search_cont -->
+          </div>
+          <!-- //top_search_cont -->
+        </fieldset>
+      </form>
     </div>
+    <!-- //top_search -->
+    <!-- 검색 폼 -->
   </div>
-</form>
+  <!-- //header_search_cont -->
+</div>
 
-Y1
+<div class="search_form_box">
+  <span class="sch_inner_wrap">
+    <input type="text" placeholder="검색어를 입력하세요" />
+  </span>
+  <span class="sch_inner_btn_wrap">
+    <input type="image" src="../img/Search_icon.png" alt="검색" />
+  </span>
+</div>
