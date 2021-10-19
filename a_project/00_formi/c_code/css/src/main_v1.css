@@ -64,13 +64,13 @@ h1 a {
 
 .mid_navigation {
   float: left;
-  width: 450px;
+  width: 530px;
   height: 30px;
-  margin: 30px 20px 0px 300px;
+  margin: 30px 80px 0px 220px;
 }
 
-.mid_navigation > .gnb {
-  width: 100%;
+.mid_navigation .gnb {
+  width: auto;
   height: 100%;
 }
 
@@ -167,6 +167,7 @@ fieldset {
   margin-right: 20px;
   box-sizing: border-box;
   text-align: center;
+  text-transform: uppercase;
   line-height: 30px;
 }
 
@@ -442,7 +443,7 @@ fieldset {
 .best_conbox {
   float: left;
   width: 300px;
-  height: 360px;
+  height: 380px;
   padding: 10px;
   margin-right: 33px;
   background-color: #fff;
@@ -453,6 +454,7 @@ fieldset {
 }
 
 .best_conbox .thumbnail {
+  position: relative;
   float: left;
   width: 100%;
   height: 200px;
@@ -464,16 +466,73 @@ fieldset {
   width: 100%;
   height: 100%;
 }
-
-.description {
-  float: left;
-  width: 100%;
-  height: 140px;
+.shop_bag_icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  /* background-image: url(../../img/shopping-bag.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%; */
+  border-radius: 100%;
+  cursor: pointer;
+}
+.shop_bag_icon:hover {
+  background-color: #ffd800;
 }
 
-.description p {
+.shop_bag_icon img {
+  transform: scale(0.7);
+}
+사용 x .description {
+  float: left;
+  width: 100%;
+  height: 160px;
+}
+
+.best_pd_name a {
+  display: block;
   padding-top: 10px;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.best_pd_name .sub_text {
+  font-size: 0.95rem;
+  padding-left: 0.2rem;
+  margin-top: 10px;
+}
+
+.best_pd_price {
+  margin-top: 20px;
+}
+
+.best_pd_p_dc {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: -0.05rem;
+}
+
+.best_pd_per_price {
+  display: inline-block;
+  margin: 3px 0px 0px 7px;
+  font-size: 1.05rem;
+  color: #bebebe;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.best_pd_sale_price {
+  float: right;
+  margin: 3px 4px 0px 0px;
+  text-align: right;
+  color: #f00;
+  font-weight: 700;
   font-size: 1.5em;
+  letter-spacing: -0.05rem;
 }
 
 /* #brandAboutBox ============================================================ */
