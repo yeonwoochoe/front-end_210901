@@ -51,20 +51,16 @@
                   <fieldset>
                     <legend class="blind">상품 검색창</legend>
                     <span class="sch_inner_wrap">
-                      <input type="text" id="searchIn" name="search__In" value="" placeholder="검색어를 입력하세요" autofocus />
+                      <input type="text" id="searchIn" name="search__In" value="" placeholder="검색어를 입력하세요" />
                     </span>
-                    <label for="searchIn">
-                    <span class="sch_inner_btn_wrap">
-                      <input
-                        type="image"
-                        src="../img/Search_icon.png"
-                        alt="검색"
-                      />
-                    </span>
-                  </label>
+                    <label for="searchIn"></label>
+                    <button  type="submit" class="sch_inner_btn_wrap">
+                    <span class="blind">검색</span>
+                    </button>
                   </fieldset>
                 </form>
               </div>
+
 
               <!--실제로는 이런 구성을-->
               <!-- <div class="search_demo">
@@ -416,20 +412,25 @@
           <div class="cs_center">
             <h3>customer center</h3>
             <em class="cs_number">1111-1111</em>
+            <div class="all_sub time">
             <p><em>평일</em> 오전 10:00 ~ 오후 05:00</p>
             <p><em>점심</em> 오후 12:30 ~ 오후 01:30</p>
-            <p><em>휴무</em> 토 / 일 / 공휴일 휴무</p>
+            <p>주말 &#183;&#09;공휴일&#09;<em>휴무</em></p>
+          </div>
           </div>
           <div class="bank_account">
             <h3>bank account</h3>
+            <em class="bank_forme">(주)포미다이어트</em>
+            <div class="all_sub bank">
             <p>
-              <span class="theme1">은행</span>
-              <span class="theme2 account">111-111-11111</span>
+              <span class="blind">은행명</span>
+              <span class="theme2 account">신한은행</span>
             </p>
             <p>
-              <span class="theme1">예금주</span>
-              <span class="theme2 account">회사명</span>
+              <span class="blind">계좌번호</span>
+              <span class="theme2 number">1111-111-11111</span>
             </p>
+            </div>
           </div>
         </div>
 

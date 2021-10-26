@@ -51,17 +51,12 @@
                   <fieldset>
                     <legend class="blind">상품 검색창</legend>
                     <span class="sch_inner_wrap">
-                      <input type="text" id="searchIn" name="search__In" value="" placeholder="검색어를 입력하세요" autofocus />
+                      <input type="text" id="searchIn" name="search__In" value="" placeholder="검색어를 입력하세요" />
                     </span>
-                    <label for="searchIn">
-                    <span class="sch_inner_btn_wrap">
-                      <input
-                        type="image"
-                        src="../img/Search_icon.png"
-                        alt="검색"
-                      />
-                    </span>
-                  </label>
+                    <label for="searchIn"></label>
+                    <button  type="submit" class="sch_inner_btn_wrap">
+                    <span class="blind">검색</span>
+                    </button>
                   </fieldset>
                 </form>
               </div>
@@ -111,16 +106,87 @@
 
       <article id="loginBox">
         <h2 class="blind">로그인 영역</h2>
-        <form action="#" method="post">
-          <div class="view_area">
-            <div class="view_title">
-              <h3><span>DAILY HEALTHY MEAL</span>더포르미</h3>
-              <h4>맛있는 가벼움, 5가지 건강한 잡곡 데일리 간편도시락 더포르미</h4>
-              <p>압력밥솥으로 짓는 잡곡밥, 수제반찬으로 언제 어디서나 속 편한 한끼!<br/>
-                다양한 12종 구성으로 남녀노소 일반식으로 적합한 도시락입니다.</p>     
-          </div>
-        </div>
+          <div class="login_area">
+            <form action="#" method="post">
+            <div class="login_title">
+              <h3>로그인</h3>
+              <p>포르미 회원으로 로그인하시면 <b>다양한 서비스를 이용할 수 있어요!</b></p>
+            </div>
+              <fieldset class="account">
+                <legend class="blind">개인 로그인 정보 입력</legend>
+                  <ul>
+                    <li>
+                      <label for="userId">
+                        <i class="id_icon"></i>
+                        <span class="blind">사용자 아이디 작성</span>
+                      </label>
+                      <input type="text" id="userId" name="user__Id" value="" 
+                      placeholder="아이디">  
+                    </li>
+
+                    <li>
+                      <label for="userPw">
+                        <i class="pw_icon"></i>
+                        <span class="blind">사용자 패스워드 작성</span>
+                      </label>
+                      <input type="password" id="userPw" name="user__Pw" value=""
+                       placeholder="패스워드">  
+                    </li>
+                 </ul>
+              </fieldset>
+
+              <fieldset class="btn">
+                <legend class="blind">개인 로그인 확인</legend>
+                <div class="allbtn login_btn">
+                  <button type="submit">로그<span>인</span></button>
+                </div>    
+              </fieldset>
+
+              <fieldset class="btn">
+                <legend class="blind">개인 로그인 및 비회원 주문조회</legend>
+                <div class="allbtn Non-members_btn">
+                  <button type="submit">비회원 주문조회</button>
+                </div>    
+              </fieldset>
         </form>
+
+          <div class="account_more_bar">
+            <ul>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">아이디 찾기</a></li>
+              <li><a href="#">비밀번호 찾기</a></li>
+            </ul>
+          </div>
+
+        <div class="sns_area">
+          <div class="sns_title">
+            <h3>간편 계정 로그인</h3>
+            <p><span>sns</span> 로그인 시 서비스 이용에 일부 제한될 수 있습니다.</p>
+          </div>
+          
+          <div class="sns_account">
+
+            <div class="naver_login">
+              <button type="button">
+                <i class="naver_icon"></i>
+              </button>
+              <p>네이버 계정으로 <br/>로그인</p>
+            </div>
+
+            <div class="kakao_login">
+              <button type="button">
+              <i class="kakao_icon"></i>
+            </button>
+              <p>카카오 계정으로<br/>로그인</p>
+            </div>
+
+          </div>
+
+      </div>
+
+
+
+        </div>
       </article>
       <!-- viewBox-->
 
@@ -137,20 +203,25 @@
           <div class="cs_center">
             <h3>customer center</h3>
             <em class="cs_number">1111-1111</em>
+            <div class="all_sub time">
             <p><em>평일</em> 오전 10:00 ~ 오후 05:00</p>
             <p><em>점심</em> 오후 12:30 ~ 오후 01:30</p>
-            <p><em>휴무</em> 토 / 일 / 공휴일 휴무</p>
+            <p>주말 &#183;&#09;공휴일&#09;<em>휴무</em></p>
+          </div>
           </div>
           <div class="bank_account">
             <h3>bank account</h3>
+            <em class="bank_forme">(주)포미다이어트</em>
+            <div class="all_sub bank">
             <p>
-              <span class="theme1">은행</span>
-              <span class="theme2 account">111-111-11111</span>
+              <span class="blind">은행명</span>
+              <span class="theme2 account">신한은행</span>
             </p>
             <p>
-              <span class="theme1">예금주</span>
-              <span class="theme2 account">회사명</span>
+              <span class="blind">계좌번호</span>
+              <span class="theme2 number">1111-111-11111</span>
             </p>
+            </div>
           </div>
         </div>
 
