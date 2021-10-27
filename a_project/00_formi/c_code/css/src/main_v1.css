@@ -325,9 +325,14 @@ fieldset {width: 100%; height: 100%;}
   font-size: 2rem;
 }
 
-.serch_pd_wrap h2 i {
+.serch_pd_wrap .search_pd_icon {
   display: inline-block;
-  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform: translateY(11px);
 }
 
 .serch_pd_wrap {
