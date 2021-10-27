@@ -310,7 +310,7 @@ fieldset {width: 100%; height: 100%;}
 #serchPdBox {
   width: 100%;
   height: 600px;
-  background-color: #333;
+  background-color: #F6FFE4;
 }
 
 .serch_pd_wrap > .search_title {
@@ -339,15 +339,15 @@ fieldset {width: 100%; height: 100%;}
   height: 450px;
   margin: auto;
   background-color: #fff;
+  box-shadow: 5px 5px 20px rgba(94, 94, 94, 0.15);
 }
 
 .serch_conbox {
   float: left;
   width: 180px;
-  height: 240px;
+  height: 230px;
   padding: 0;
   margin-right: 58px;
-  border: 1px solid #999;
   background-color: #fff;
 }
 
@@ -358,7 +358,7 @@ fieldset {width: 100%; height: 100%;}
 .serch_conbox .serch_thumbnail {
   float: left;
   width: 100%;
-  height: 190px;
+  height: 180px;
 }
 
 .serch_thumbnail img {
@@ -366,7 +366,7 @@ fieldset {width: 100%; height: 100%;}
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  background-color: #555;
+  background-color:transparent;
 }
 
 .serch_description {
@@ -377,7 +377,8 @@ fieldset {width: 100%; height: 100%;}
 
 .serch_description p {
   padding-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.375rem;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -387,20 +388,19 @@ fieldset {width: 100%; height: 100%;}
   width: 100%;
   height: 1000px;
   padding: 80px 0;
-  background-color: #333;
+  background-color: #F6FFE4;
 }
 
 .bset_pd_wrap {
   width: 1300px;
   height: 360px;
-  margin: 0 auto;
-  background-color: #333;
-}
+  margin: 0 auto;}
+
 
 #bestPdBox > .best_title {
   width: 100%;
   height: auto;
-  margin-bottom: 180px;
+  margin-bottom: 150px;
 }
 
 #bestPdBox .icon {
@@ -413,32 +413,34 @@ fieldset {width: 100%; height: 100%;}
 
 #bestPdBox h2 {
   text-align: center;
-  color: #fff;
+  color: #171717;
   font-size: 2.5rem;
 }
 
-#bestPdBox h2 i {
+#bestPdBox p i {
   display: block; /*i태그는 인라인 요소이기 때문에 블록처리해야함*/
   width: 40px;
   height: 40px;
   margin: auto;
-  background-color: #fff;
-  background-image: url("../../img/best-pd-1.jpg");
+  background-image: url("../../img/vs_crown.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size:contain;
 }
 
-#bestPdBox h3 {
+.best_title p {
   text-align: center;
-  color: #fff;
-  font-size: 2rem;
+  text-transform: uppercase;
+  color: #171717;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing:-2px;
 }
 
 .best_conbox {
   float: left;
   width: 300px;
-  height: 380px;
+  height: 440px;
   padding: 10px;
   margin-right: 33px;
   background-color: #fff;
@@ -452,7 +454,7 @@ fieldset {width: 100%; height: 100%;}
   position: relative;
   float: left;
   width: 100%;
-  height: 200px;
+  height: 280px;
   background-color: #444;
 }
 
@@ -475,12 +477,17 @@ fieldset {width: 100%; height: 100%;}
   cursor: pointer;
 }
 .shop_bag_icon:hover {
-  background-color: #ffd800;
+  background-color: #70A103;
 }
+
+
 
 .shop_bag_icon img {
   transform: scale(0.7);
 }
+
+.shop_bag_icon img:hover {filter: brightness(100);}
+
 
 .description {
   float: left;
@@ -495,11 +502,11 @@ fieldset {width: 100%; height: 100%;}
   text-decoration: none;
 }
 
-.best_pd_name .sub_text {
+.sub_text {
   font-size: 0.95rem;
+  letter-spacing: -0.5px;
   padding-left: 0.2rem;
-  margin-top: 10px;
-}
+  margin-top: 10px;}
 
 .best_pd_price {
   margin-top: 20px;
@@ -535,7 +542,7 @@ fieldset {width: 100%; height: 100%;}
 #brandAboutBox {
   width: 100%;
   height: 800px;
-  background-color: #ddd;
+  background-color: #70A103;
 }
 
 .brand_wrap {
@@ -648,7 +655,7 @@ fieldset {width: 100%; height: 100%;}
 #rivewPdBox {
   width: 100%;
   height: 900px;
-  background-color: #777;
+  background-color: #F6FFE4;
   padding: 100px 0;
 }
 
@@ -658,17 +665,18 @@ fieldset {width: 100%; height: 100%;}
 }
 #rivewPdBox h2 {
   text-align: center;
-  color: #fff;
-  font-size: 2.5rem;
+  color: #171717;
+  font-size: 2.25rem;
 }
-#rivewPdBox h3 {
+#rivewPdBox p {
   text-align: center;
-  color: #fff;
-  font-size: 2rem;
+  color: #171717;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-#rivewPdBox h2 i {
-  display: block; /*i태그는 인라인 요소이기 때문에 블록처리해야함*/
+/* #rivewPdBox h2 i { 
+  display: block; i태그는 인라인 요소이기 때문에 블록처리해야함
   width: 40px;
   height: 40px;
   margin: auto;
@@ -676,8 +684,7 @@ fieldset {width: 100%; height: 100%;}
   background-image: url("../../img/best-pd-1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
-}
+  background-size: contain; */
 
 .revew_pd_wrap {
   width: 1300px;
@@ -726,7 +733,7 @@ fieldset {width: 100%; height: 100%;}
   font-weight: 400;
   text-align: center;
   line-height: 60px;
-  background-color: #444;
+  background-color: #70A103;
 }
 
 .direc_btn a::after {
@@ -833,8 +840,9 @@ fieldset {width: 100%; height: 100%;}
   display: inline-block; /*i태그는 인라인 요소이기 때문에 블록처리해야함*/
   width: 20px;
   height: 20px;
+  transform: translateX(8px);
   vertical-align: middle;
-  background-image: url("/img/next_btn.svg");
+  background-image: url("../../img/bi_box-arrow-up-right.svg");
   background-repeat: no-repeat;
 }
 
