@@ -171,7 +171,7 @@ line-height: 30px; box-sizing: border-box; text-align: center;}
 .fit-prd-wrapper .question-chk-wrap .q-tit { margin-top: 4px; color: #fff; font-size: 24px; font-weight: 400; }
 
 .fit-prd-wrapper .question-chk-wrap .chk-box-list { margin-top: 24px; font-size: 0; }
-.fit-prd-wrapper .question-chk-wrap .chk-box-list .q-item { display: inline-block; width: calc( (100% - 20.01px) / 3 );
+.fit-prd-wrapper .question-chk-wrap .chk-box-list .q-item { display: inline-block; width: cal 
    margin-right: 10px; margin-bottom: 10px; font-size: 13px; vertical-align: top; }
 .fit-prd-wrapper .question-chk-wrap .chk-box-list .q-item:nth-child(3n) { margin-right: 0; }
 

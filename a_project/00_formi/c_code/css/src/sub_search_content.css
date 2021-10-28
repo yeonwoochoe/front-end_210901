@@ -140,35 +140,96 @@ line-height: 30px; box-sizing: border-box; text-align: center;}
 /* #loginBox ============================================================*/
 
 #searchFormBox {
-  width: 100%; height: 2000px; margin-top: -50px; 
-background-color: #009;}
+  width: 100%; height: 2050px; margin-top: -50px; 
+background-image: url('../../img/user/bg.png');}
 
-.question_area { width: 960px; height: 100%;
-  margin: auto; padding-top: 200px;}
+.question_area { width: 1200px; height: 100%;
+  margin:auto; padding-top: 200px;}
 
-.q_main_title {text-align: center; color: #fff; margin-bottom: 50px;}
+.q_main_title {text-align: center; color: #fff; margin-bottom: 80px;}
 .question_area h2 {margin-bottom: 20px;font-size: 3rem;}
 .question_area p {text-align: center; font-size: 1.375rem; font-weight: 400;}
 
 
-.question-list {width: 100%; height: 500px; background-color: #234; text-align: center;}
+.question-list {width: 100%; height: auto; 
+  margin-bottom: 180px; text-align: center;}
 .q-no {margin-bottom: 10px;  font-size: 1.375rem; font-weight: 700; 
       text-transform: uppercase; color: #FFD800; }
-  h3 {font-size: 1.375rem; font-weight: 400; color: #fff;}
+.question-list h3 {font-size: 30px; font-weight: 500; color: #fff;}
 
-
-  .q-item  {width: 100%; height: 280px; background-color: #545;} 
+  .q-item  {width: 100%; height: 280px; } 
   .gender_wrap {width: 420px; height: auto; margin: auto;}
   
-  .q-chk-box { float: left; width: 200px; height: 200px;  
-  margin-right: 20px; margin-top: 40px;
-   background-color: #dfd;}
-
-  .q-chk-box:nth-child(2) {margin-right: 0;}
-
+  .q-chk-box {
+    position: relative;
+    float: left; width: 200px; height: 200px;  
+    margin-right: 20px; margin-top: 40px;}
 
 
 
+    .q-chk-box:nth-child(2) {margin-right: 0;}
+    
+    .gender_box
+      {display: block;
+      width: 200px; height: 200px;
+      background-color: rgba(255, 255, 255, 0.2);
+      background-image: url('../../img/user/css_sprites.png');
+      background-repeat: no-repeat;
+      background-position: -500px -25px;
+      background-size:inherit;
+      border-radius: 100%;
+      border: 4px solid rgba(255, 255, 255, 0.7);}
+
+    .ma{background-position: -900px -25px;}
+  
+    .gender_box {padding-top: 120px; box-sizing: border-box;
+      color: #fff; font-size: 1.5rem;}
+
+      
+
+    .q-chk-box>input:checked + label{ background-color: rgb(255, 255, 255); 
+      background-position: -700px -25px;
+    color: #333; }
+
+    .q-chk-box>input:checked + .ma{ 
+      background-color: rgb(255, 255, 255);  background-position: -1100px -25px; }
+
+
+
+
+.qs-item{width: 960px; height: auto; margin: auto;  padding-top: 50px;}
+
+
+.qs_wrap {width: 930px; height: 100px; margin: auto; }
+.qs_con { float: left; width: 170px; height: 100px;  
+  margin-right: 20px;}
+
+
+.qs_wrap.pp {width: 1080px; height: 100px; margin: auto; }
+
+.qs_con.pp {width: 200px;  margin-right: 20px; }
+.qs_con:last-child {margin-right: 0;}
+
+.q_box {display: block; width: 100%; height: 100%;
+background-color: rgb(255, 255, 255,0.2); border-radius: 15px;
+border: 3px solid rgba(255, 255, 255, 0.5);
+color: #fff; font-size: 22px; font-weight: 700;
+line-height: 100px;
+}
+
+.qs_con>input:checked + label{ background-color: rgb(255, 255, 255); color: #333; 
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 20%);}
+
+
+.q_title {margin-bottom: 50px;}
+
+.qs_con.life {width: calc( (100% - 40px) / 3 );}
+
+.qs_wrap.pp {margin-bottom: 30px;}
+.pp2 .life {width: calc( (100% - 40px) /3 );}
+
+
+  
 /* #infoBox ============================================================ */
 #infoBox {
   width: 100%; height: 623px;
