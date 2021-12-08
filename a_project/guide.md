@@ -137,9 +137,10 @@
 
 |▶(📂html) ➡ 📙main.html
 
-|▶(📂multi) ➡ (📂img)  ➡ 📜favicon.png(64*64)
-             ➡ (📂video)
-             ➡ (📂audio)
+|▶(📂img) 	➡ (📂icon)  ➡ 📜favicon.png(64*64)
+             
+|▶(📂multi) ➡ (📂video)
+             ➡ (📂audio)             
              
 |▶(📂js) ➡ (📂common) - normalize
           ➡ (📂src)
