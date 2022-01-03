@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Header from './component/Header';
+import Contentbox from './component/Contentbox';
+import Footer from './component/Footer';
 import './App.css';
 
 function App() {
+  const myName = 'yeonwoos의 웹'
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header name={myName} 
+      url="http://naver.com"/>
+    <Contentbox name={myName}/>
+    <Footer name={myName}/>
     </div>
   );
 }
