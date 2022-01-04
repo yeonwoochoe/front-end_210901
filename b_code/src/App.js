@@ -1,16 +1,17 @@
+import React from 'react';
 import Header from './component/Header';
-import Contentbox from './component/Contentbox';
+import Main from './component/Main';
 import Footer from './component/Footer';
 import './App.css';
 
 function App() {
-  const myName = 'yeonwoos의 웹'
+  const title = 'site';
+
   return (
     <div className="App">
-    <Header name={myName} 
-      url="http://naver.com"/>
-    <Contentbox name={myName}/>
-    <Footer name={myName}/>
+      <Header heading={title} />
+      <Main />    
+      <Footer heading={title} />
     </div>
   );
 }
