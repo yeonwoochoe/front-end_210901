@@ -13,15 +13,11 @@ export default function Review() {
   }, [review])
 
 
-  useEffect( async ()=>{
-    // fetch('/data/dataSample.json')
-    // .then(res=>res.json())
-    // .then(console.log)
-
-    const resolve = await fetch('./data/dataSample.json');
-    const data    = await resolve.json();
-    console.log(data);
-  },[])
+  // useEffect( async ()=>{
+  //   const resolve = await fetch('./data/dataSample.json');
+  //   const data    = await resolve.json();
+  //   console.log(data);
+  // },[])
 
 
 
