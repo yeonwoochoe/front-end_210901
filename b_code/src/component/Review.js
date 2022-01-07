@@ -1,40 +1,28 @@
 import React,{useState, useEffect} from 'react';
-import '../style/Review.scss';
 // import axios from 'axios';
+import '../style/Review.scss';
+
 
 export default function Review() {
   const [review, setReview] = useState('글자를 입력하세요.');
-  const fnReviewChange = (e)=>{
-    setReview( e.target.value );
-  };
+  const fnReviewChange = (e)=>{  setReview( e.target.value ) };
   
   useEffect( ()=>{
-    console.log( review );
-  }, [review])
+    // console.log( review );
+  }, []);
 
 
-  // useEffect( async ()=>{
-  //   const resolve = await fetch('./data/dataSample.json');
-  //   const data    = await resolve.json();
-  //   console.log(data);
-  // },[])
-
-
-
-
-
-
-
-
-
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // useEffect( async () => {
+  //   // const response = await axios.get('./data/dataSample.json');
+  //   // const dataResult = await response.data;
+  //   // console.log(dataResult);
+  // }, [])
+  
+  
+  
   // useState()  : 하나의 내용에서 변경될 내용을 적용하기 위한 API
   // useEffect() : 상태체크(변화시 어떠한 기능을 확인체크), fetching
-
-
-
-
-
 
   return (
     <div className="review_area">
@@ -48,4 +36,4 @@ export default function Review() {
       </form>
     </div>
   )
-}
+}// Review()
