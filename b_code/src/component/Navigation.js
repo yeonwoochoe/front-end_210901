@@ -3,12 +3,13 @@ import {NavLink} from 'react-router-dom';
 export default function Navigation (){
   // const navList = ['list1', 'list2', 'list3'];
   const navList = [
-    {content:"Main", href:"main"},
+    {content:"Main", href:"/"},
     {content:"Review", href:"review"},
     {content:"CardList", href:"cardList"},
     {content:"Product", href:'product' },
-    {content:"Event", href:'event' }
+    {content:"Event" , href:'event'}
   ];
+  
 
   return (
     <nav id="navBox">
