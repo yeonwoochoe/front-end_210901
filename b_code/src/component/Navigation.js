@@ -9,7 +9,6 @@ export default function Navigation (){
     {content:"Product", href:'product' },
     {content:"Event" , href:'event'}
   ];
-  
 
   return (
     <nav id="navBox">
