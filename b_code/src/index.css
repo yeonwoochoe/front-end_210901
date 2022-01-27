@@ -1,29 +1,57 @@
 /*  reset.css, common.css */
-:root { font-size: 16px; }
+:root {
+  font-size: 16px;
+}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  width: 100%; height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100%;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-html, body,
-h1, h2, h3, h4, h5, h6,
-p, pre, blockquote, address,
-ul, ol, li, dl, dt, dd,
-hr, button, img, div,
-header, article, nav, section, footer, aside,
-main, figure, figcaption, hgroup,
-form, fieldset, textarea, select {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+blockquote,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+hr,
+button,
+img,
+div,
+header,
+article,
+nav,
+section,
+footer,
+aside,
+main,
+figure,
+figcaption,
+hgroup,
+form,
+fieldset,
+textarea,
+select {
   margin: 0;
   padding: 0;
   border: 0;
@@ -31,7 +59,8 @@ form, fieldset, textarea, select {
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -57,7 +86,9 @@ button {
   border-radius: 0;
 }
 
-em, address, i {
+em,
+address,
+i {
   font-style: normal;
 }
 
@@ -65,13 +96,19 @@ abbr {
   text-decoration: none;
 }
 
-table, tr, td, th, thead, tbody, tfoot {
+table,
+tr,
+td,
+th,
+thead,
+tbody,
+tfoot {
   border: 0.0625rem solid #757575;
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-select, input {
+/* select, input {
   margin: 0;
   padding: 0;
   border: 0;
@@ -83,14 +120,24 @@ input[type=tel], input[type=url],
 input[type=email], input[type=search] {
   text-indent: 0.5rem;
   cursor: pointer;
-}
+} */
 
-select, input, textarea {
+select,
+input,
+textarea {
   cursor: pointer;
 }
 
-header, article, nav, section, footer, aside,
-main, figure, figcaption, hgroup {
+header,
+article,
+nav,
+section,
+footer,
+aside,
+main,
+figure,
+figcaption,
+hgroup {
   display: block;
 }
 
@@ -125,7 +172,8 @@ main, figure, figcaption, hgroup {
   height: auto;
 }
 
-.clearfix:after, .clearfix::after {
+.clearfix:after,
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
@@ -149,8 +197,14 @@ main, figure, figcaption, hgroup {
 }
 
 .blank_wrap {
-  width: 100%; height: auto; min-height:400px; padding:5rem; 
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  padding: 5rem;
   font-size: 2rem;
 }
 
-#root { width: 100%; height: 100%; }
+#root {
+  width: 100%;
+  height: 100%;
+}
