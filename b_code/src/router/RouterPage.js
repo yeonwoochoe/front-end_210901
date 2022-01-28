@@ -1,12 +1,12 @@
-import React from 'react';
-import {Routes, Route} from 'react-router-dom';
-import Main from '../page/Main';
-import Product from '../component/Product';
-import Review from '../component/Review';
-import CardList from '../component/CardList';
-import Event from '../component/Event';
-import {Manual, Person, Rule} from '../page/Company';
-import NotFound from '../component/NotFound';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Main from "../page/Main";
+import Product from "../component/Product";
+import Review from "../component/Review";
+import CardList from "../component/CardList";
+import Event from "../component/Event";
+import { Manual, Person, Rule, Etc } from "../page/Company";
+import NotFound from "../component/NotFound";
 
 export default function RouterPage() {
   return (
@@ -20,12 +20,12 @@ export default function RouterPage() {
       <Route path="/manual" element={<Manual />} />
       <Route path="/person" element={<Person />} />
       <Route path="/rule" element={<Rule />} />
+      <Route path="/Etc" element={<Etc />} />
       <Route path="/product" element={<Product />} />
       <Route path="/event" element={<Event />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-  )
+  );
 }
-
 
 // 'react-router-dom' -> {BroserRouter, Routes, Route}

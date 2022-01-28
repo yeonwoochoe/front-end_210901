@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { useEffect } from "react/cjs/react.development";
 import "../style/Company.scss";
 import ManualStyle from "../style/Manual.module.scss";
 import PersonStyle from "../style/Person.module.scss";
@@ -21,12 +22,12 @@ export function Manual() {
   const handleUpload = () => {
     //이전 상태값을 보여주기위하여 콜백함수를 넣어줌.
     setNames((prevState) => {
-      console.log("이전 stata값", prevState, text);
+      // console.log("이전 stata값", prevState, text);
       return [text, ...prevState];
     });
   };
 
-  console.log(text, "input값상태");
+  // console.log(text, "input값상태");
 
   return (
     <div className="company_area">
@@ -51,32 +52,69 @@ export function Manual() {
 
 export function Person() {
   const [count, setCount] = useState(0); //
-  //순서대로 현재값, 업데이트함수, 초기값을 뜻함
+  const countRef = useRef(0);
+  console.log("나는 계속 렌더링중...");
+
+  const upCounstState = () => {
+    setCount(count + 1);
+  };
+
+  const upCounstRef = () => {
+    countRef.current = countRef.current + 1;
+    console.log("Ref:", countRef.current);
+  };
+
   return (
     <div className="company_area">
       <h2 className={PersonStyle.title}>
-        Person <span>page</span>
+        UseRef <span>예제</span>
       </h2>
-      <p>Person 관련 무언가 내용작성</p>
-      <div className={PersonStyle.count}> 수량체크, {count}</div>
-      <button onClick={() => setCount(count - 1)}>-</button>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <p>ref는 어떻게 다를까?</p>
+      <p>State: {count}</p>
+      <p>Ref: {countRef.current}</p>
+      <button onClick={upCounstState}>state up</button>
+      <button onClick={upCounstRef}>Ref up</button>
     </div>
   );
 }
+
 export function Rule() {
+  const [count, setCount] = useState(1);
+  const renderCount = useRef(1);
+
+  useEffect(() => {
+    renderCount.current = renderCount.current + 1;
+    console.log("렌더링 카운터 수:", renderCount.current);
+  });
+
   return (
     <div className="company_area">
-      <h2 className="title">Rule</h2>
-      <p>Rule 관련 무언가 내용작성</p>
+      <h2 className="title">useRef</h2>
+      <p>useRef로 렌더링 카운트하기</p>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>up</button>
     </div>
   );
 }
+
 export function Etc() {
+  const inputRef = useRef();
+
+  useEffect(() => {
+    // console.log(inputRef);
+    inputRef.current.focus();
+  });
+
+  const login = () => {
+    alert(`환영합니다 ${inputRef.current.value}!`);
+    inputRef.current.focus();
+  };
+
   return (
     <div className="company_area">
-      <h2 className="title">Etc</h2>
-      <p>Etc 관련 무언가 내용작성</p>
+      <h2 className="title">dom의 접근하기</h2>
+      <input ref={inputRef} type="text" placeholder="이름을 임력하세요" />
+      <button onClick={login}>로그인</button>
     </div>
   );
 }
