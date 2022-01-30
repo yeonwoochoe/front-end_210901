@@ -3,6 +3,7 @@ import { useEffect } from "react/cjs/react.development";
 import "../style/Company.scss";
 import ManualStyle from "../style/Manual.module.scss";
 import PersonStyle from "../style/Person.module.scss";
+import Timer from "./Timer";
 const heavyWork = () => {
   console.log("엄청무거운작업");
   return ["후추", "최희윤", "박다윤"];
@@ -115,6 +116,20 @@ export function Etc() {
       <h2 className="title">dom의 접근하기</h2>
       <input ref={inputRef} type="text" placeholder="이름을 임력하세요" />
       <button onClick={login}>로그인</button>
+    </div>
+  );
+}
+
+export function Example() {
+  const [showTimer, setShowTimer] = useState(false);
+  return (
+    <div className="company_area">
+      <div>
+        {/* showTimer가 ture일떄만 타이머가 보여지고 */}
+        {showTimer && <Timer />}
+        {/* 버튼을 눌렀을떄 ShowTimer가  false라면 ture바꿔주고 ture라면 false로 만들기 */}
+        <button onClick={() => setShowTimer(!showTimer)}> Toggle Timer</button>
+      </div>
     </div>
   );
 }
